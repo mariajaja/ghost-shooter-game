@@ -4,6 +4,10 @@ var canvasBg = document.getElementById("canvasBg"),
     ctxEntities = canvasEntities.getContext("2d"),
     canvasWidth = canvasBg.width,
     canvasHeight = canvasBg.height,
+    //player1 = new Player(),
+    //enemies = [],
+    //numEnemies = 5,
+    //obstacles = [],
     isPlaying = false,
     requestAnimFrame = window.requestAnimationFram ||
                        window.webkitRequestAnimationFrame ||
@@ -19,9 +23,13 @@ imgSprite.src = "images/sprite.png";
 imgSprite.addEventListener("load", init, false);
 
 function init() {
+    //document.addEventListener("keydown", checkKeyDown, false);
+    //document.addEventListener("keyup", checkKeyUp, false);
+    //definteObstacles();
+    //initEnemies();
     begin();
 }
 
 function begin() {
-
+    ctxBg.drawImage(imgSprite, 0, 0, canvasWidth, canvasHeight, 0, 0, canvasWidth, canvasHeight);
 }
